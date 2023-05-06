@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  body{
+  background-color:skyblue;
+  }
+</style>
+    <title>Countdown Timer</title>
+    <script>
+      var countDownDate = new Date().getTime() + 600000; // 10 minutes from now
+
+      var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML ="Experied";
+        }
+      }, 1000);
+    </script>
+  </head>
+<body>
+<form>
+   <h1>Countdown Timer</h1>
+    <p id="timer"></p>
+  <h1>Questions</h1>
+  <form>
+  <h3>1. Which one of the following is not a Java feature?</h3>
+  <input type="radio" name="r">
+  a.Object-oriented<br>
+  <input type="radio" name="r" >
+  b.Use of pointers<br>
+  <input type="radio" name="r" >
+  c.Portable<br>
+  <input type="radio" name="r"  >
+  d.Dynamic and Extensible<br>
+  </form>
+  
+  <form>
+  <h3>2.Which of the following is not an OOPS concept in Java?</h3>
+  <input type="radio" name="r" >
+  a.Polymorphism<br>
+  <input type="radio" name="r" >
+  b. Inheritance<br>
+  <input type="radio" name="r" >
+  c.Compilation<br>
+  <input type="radio" name="r" >
+  d.Encapsulation<br>
+  </form>
+  
+  <form>
+  <h3>3.Which exception is thrown when java is out of memory?</h3>
+  <input type="radio" name="r">
+  a.MemoryError<br>
+  <input type="radio" name="r">
+  b.OutOfMemoryError<br>
+  <input type="radio" name="r" >
+  c.MemoryOutOfBoundsException<br>
+  <input type="radio" name="r" >
+  d.MemoryFullException<br>
+  </form>
+  
+  <form>
+  <h3>4.Which of these are selection statements in Java?</h3>
+  <input type="radio" name="r" >
+  a.break<br>
+  <input type="radio" name="r" >
+  b.continue<br>
+  <input type="radio" name="r" >
+  c.for()<br>
+  <input type="radio"name="r" >
+  d.if()<br>
+  </form>
+  
+  <form>
+  <h3>5.Which of the below is not a Java Profiler?</h3>
+  <input type="radio" name="r">
+  a.JProfiler<br>
+  <input type="radio" name="r">
+  b.Eclipse Profiler<br>
+  <input type="radio" name="r">
+  c.JVM<br>
+  <input type="radio" name="r">
+  d.JConsole<br>
+  </form>
+  
+  <form>
+  <h3>6.Which class provides system independent server side implementation?</h3>
+  <input type="radio" name="r">
+  a.Server<br>
+  <input type="radio" name="r">
+  b.ServerReader<br>
+  <input type="radio" name="r">
+  c.Socket<br>
+  <input type="radio" name="r">
+  d.ServerSocket<br>
+  </form>
+  
+  <form>
+  <h3>7.Which of the following is true about servlets?</h3>
+   <input type="radio" name="r">
+  a.Servlets can use the full functionality of the Java class libraries<br>
+  <input type="radio" name="r">
+  b.Servlets execute within the address space of web server, platform independent and uses the functionality of java class libraries<br>
+  <input type="radio" name="r">
+  c.Servlets execute within the address space of web server<br>
+  <input type="radio" name="r">
+  d.Servlets are platform-independent because they are written in java<br>
+  </form>
+  
+  <form>
+  <h3>8.In which of the following is toString() method defined?</h3>
+  <input type="radio" name="r">
+  a.java.lang.Object<br>
+  <input type="radio" name="r">
+  b.java.lang.String<br>
+  <input type="radio" name="r">
+  c.java.lang.til<br>
+  <input type="radio" name="r">
+  d.None<br>
+  </form>
+  
+  <form>
+  <h3>9.The 'super' keyword is used to ___.</h3>
+  <input type="radio" name="r">
+  a.Access instance of the parent class<br>
+  <input type="radio" name="r">
+  b.Access instance of the same class<br>
+  <input type="radio" name="r">
+  c.Access instance of child class<br>
+  <input type="radio" name="r">
+  d.Access instance of friend class<br>
+  </form>
+  
+  <form>
+  <h3>10.Wrapper class in java is ___.</h3>
+  <input type="radio" name="r">
+  a.Used to encapsulate primitive data types<br>
+  <input type="radio" name="r">
+  b.Declare new classes called wrapper<br>
+  <input type="radio" name="r">
+  c.Create a new instance of the class<br>
+  <input type="radio" name="r">
+  d.None of these<br>
+  </form>
+  
+  </form>
+  <form action="uhome.html">
+   <button onclick="window.alert('answer successfully submitted')">Submit</button>
+  </form>
+  
+</body>
+</html>
